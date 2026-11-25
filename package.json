@@ -1,0 +1,16 @@
+{
+  "name": "cis-df-exam-simulator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Throwaway mock-exam app for the ServiceNow CIS Data Foundations certification",
+  "type": "module",
+  "scripts": {
+    "prestart": "node scripts/check-node.cjs",
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "pretest": "node scripts/check-node.cjs",
+    "test": "node --disable-warning=ExperimentalWarning --test"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}
